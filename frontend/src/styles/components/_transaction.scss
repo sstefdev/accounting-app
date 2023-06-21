@@ -1,0 +1,36 @@
+.transaction {
+  position: relative;
+
+  .transaction-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    width: 40px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 2;
+
+    svg {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 4px;
+    }
+
+    .withdraw {
+      filter: invert(46%) sepia(69%) saturate(2552%) hue-rotate(331deg) brightness(118%)
+        contrast(95%);
+      transform: rotate(180deg);
+      margin-bottom: 0px;
+      margin-top: 4px;
+    }
+
+    .deposit {
+      filter: invert(64%) sepia(50%) saturate(507%) hue-rotate(110deg) brightness(92%) contrast(86%);
+    }
+  }
+}

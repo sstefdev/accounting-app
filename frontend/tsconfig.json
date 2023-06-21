@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "paths": {
+      "@base/*": ["./*"],
+      "@src/*": ["./src/*"],
+      "@types": ["./types.d.ts"],
+      "@assets/*": ["./src/assets/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@containers/*": ["./src/containers/*"],
+      "@components/*": ["./src/components/*"]
+    },
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "types": ["jest", "node"],
+    "typeRoots": ["./types.d.ts", "node_modules/@types"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "types.d.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist"],
+  "references": [{ "path": "./tsconfig.vite.json" }]
+}

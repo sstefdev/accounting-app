@@ -1,0 +1,13 @@
+.animation-disappear {
+  animation: disappear 4s linear;
+}
+
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,17 @@
+.container-bg {
+  background: url('../assets/images/background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+
+  .wrapper {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(17.3px);
+    -webkit-backdrop-filter: blur(17.3px);
+    border: 1px solid rgba(255, 255, 255, 0.77);
+    height: calc(100vh - 80px);
+    width: calc(100vw - 80px);
+  }
+}

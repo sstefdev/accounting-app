@@ -1,0 +1,136 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Accounting App",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8000"
+    }
+  ],
+  "tags": [
+    {
+      "name": "API",
+      "description": "API operations"
+    }
+  ],
+  "paths": {
+    "/v1/api/ping": {
+      "get": {
+        "tags": ["General"],
+        "summary": "Health Check",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/api/account/{account_id}": {
+      "get": {
+        "tags": ["General"],
+        "summary": "Get Single Account",
+        "parameters": [
+          {
+            "name": "account_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/api/account/random": {
+      "get": {
+        "tags": ["General"],
+        "summary": "Get Random Account",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/api/transaction": {
+      "get": {
+        "tags": ["General"],
+        "summary": "Get All Transactions",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": ["General"],
+        "summary": "Create Transaction",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "account_id": "b055ee57-489b-47a8-a26b-c28dac93c158",
+                  "amount": 100,
+                  "type": "withdraw"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/v1/api/transaction/{transaction_id}": {
+      "get": {
+        "tags": ["General"],
+        "summary": "Get Single Transaction",
+        "parameters": [
+          {
+            "name": "transaction_id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

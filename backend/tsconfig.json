@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@controller/*": ["./src/controller/*"],
+      "@entity/*": ["./src/entity/*"],
+      "@routes/*": ["./src/routes/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@app-types": ["types.d.ts"]
+    },
+    "lib": ["es6"],
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "types": ["jest"],
+    "typeRoots": ["./types.d.ts", "node_modules/@types"]
+  },
+  "include": ["src/**/*.ts", "types.d.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

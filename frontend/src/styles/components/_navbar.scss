@@ -1,0 +1,22 @@
+.navbar {
+  .links,
+  .logo {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .logo {
+    transition: all 0.2s;
+    &:hover {
+      svg {
+        transform: scale(1.1);
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%)
+          contrast(102%);
+      }
+    }
+  }
+
+  svg {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
